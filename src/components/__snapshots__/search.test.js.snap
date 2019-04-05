@@ -1,0 +1,126 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div>
+  <div
+    data-testid="search-container"
+    style="margin-top: 2.5rem;"
+  >
+    Found 
+    0
+     item
+    s
+  </div>
+</div>
+`;
+
+exports[`searches multiple articles 1`] = `
+<div>
+  <div
+    data-testid="search-container"
+    style="margin-top: 2.5rem;"
+  >
+    Found 
+    2
+     item
+    s
+    <a
+      data-testid="item-link"
+      href="/FIRST"
+      style="text-decoration: none;"
+    >
+      <div
+        class="sc-bdVaJa fyMwNk"
+      >
+        <div>
+          <span
+            class="sc-bxivhb dMHcoS"
+            data-testid="item-heading"
+          >
+            TITLE
+          </span>
+          <p
+            class="sc-ifAKCX bEJvBp"
+            data-testid="item-description"
+          >
+            ONE EINS UNO ARTICLE
+          </p>
+          <p
+            class="sc-EHOje knEcdQ"
+            data-testid="item-info"
+          />
+        </div>
+      </div>
+    </a>
+    <a
+      data-testid="item-link"
+      href="/SECOND"
+      style="text-decoration: none;"
+    >
+      <div
+        class="sc-bdVaJa fyMwNk"
+      >
+        <div>
+          <span
+            class="sc-bxivhb dMHcoS"
+            data-testid="item-heading"
+          >
+            TITLE
+          </span>
+          <p
+            class="sc-ifAKCX bEJvBp"
+            data-testid="item-description"
+          >
+            TWO ZWEI DUO ARTICLE
+          </p>
+          <p
+            class="sc-EHOje knEcdQ"
+            data-testid="item-info"
+          />
+        </div>
+      </div>
+    </a>
+  </div>
+</div>
+`;
+
+exports[`searches single articles 1`] = `
+<div>
+  <div
+    data-testid="search-container"
+    style="margin-top: 2.5rem;"
+  >
+    Found 
+    1
+     item
+    <a
+      data-testid="item-link"
+      href="/FIRST"
+      style="text-decoration: none;"
+    >
+      <div
+        class="sc-bdVaJa fyMwNk"
+      >
+        <div>
+          <span
+            class="sc-bxivhb dMHcoS"
+            data-testid="item-heading"
+          >
+            TITLE
+          </span>
+          <p
+            class="sc-ifAKCX bEJvBp"
+            data-testid="item-description"
+          >
+            ONE EINS UNO ARTICLE
+          </p>
+          <p
+            class="sc-EHOje knEcdQ"
+            data-testid="item-info"
+          />
+        </div>
+      </div>
+    </a>
+  </div>
+</div>
+`;

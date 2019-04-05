@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div>
+  <div
+    class="sc-bdVaJa bKzAUJ"
+  >
+    <a
+      class="sc-bwzfXH ifQkNn"
+      href="https://github.com/vantezzen/sprous"
+    >
+      powered by 
+      <span
+        aria-label="sprout emoji"
+        role="img"
+      >
+        🌱
+      </span>
+      sprous
+    </a>
+  </div>
+</div>
+`;

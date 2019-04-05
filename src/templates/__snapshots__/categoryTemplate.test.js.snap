@@ -1,0 +1,173 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div>
+  <nav
+    class="sc-bdVaJa jKGWHd"
+  >
+    <div
+      class="sc-bwzfXH eRJmGz"
+    >
+      <a
+        href="/"
+        style="text-decoration: none; display: flex; align-items: center;"
+      >
+        <div
+          class=" gatsby-image-wrapper"
+          style="position: relative; overflow: hidden; width: 2rem; margin-right: 0.5rem;"
+        >
+          <div
+            style="width: 100%; padding-bottom: 50%;"
+          />
+          <picture>
+            <img
+              alt=""
+              sizes=""
+              src=""
+              srcset=""
+              style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; object-fit: cover; object-position: center; opacity: 0; transition: opacity 0.5s;"
+            />
+          </picture>
+          <noscript>
+            &lt;picture&gt;&lt;img src="" alt="" style="position:absolute;top:0;left:0;transition:opacity 0.5s;transition-delay:0.5s;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center"/&gt;&lt;/picture&gt;
+          </noscript>
+        </div>
+        <div
+          class="sc-htpNat dJKuSC"
+          data-testid="navigation-text-logo"
+        >
+          sprous
+        </div>
+      </a>
+    </div>
+    <div
+      class="sc-EHOje kwwer"
+    >
+      <div
+        class="sc-bZQynM fcrezd"
+      />
+      <a
+        class="sc-gzVnrw dHCLGK"
+        data-testid="navigation-bts-link"
+        href="https://github.com/vantezzen/sprous"
+      >
+        Back to GitHub
+      </a>
+    </div>
+  </nav>
+  <div
+    class="sc-jzJRlG UyfDp"
+    data-testid="layout-content-outer-container"
+  >
+    <div
+      class="sc-cSHVUG hqUmlR"
+      data-testid="layout-content-inner-container"
+    >
+      <input
+        class="sc-kAzzGY fCPUBj"
+        data-testid="layout-search-field"
+        placeholder="What can I help you with?"
+        type="text"
+        value=""
+      />
+      <main>
+        <div
+          style="margin-top: 2.5rem;"
+        >
+          <div
+            class="sc-chPdSV dwQFmq"
+          >
+            <svg
+              fill="none"
+              height="100%"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              style="width: 2.5rem; margin-right: 1rem; color: rgb(61, 72, 82);"
+              viewBox="0 0 24 24"
+              width="100%"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect
+                height="16"
+                rx="2"
+                ry="2"
+                width="22"
+                x="1"
+                y="4"
+              />
+              <line
+                x1="1"
+                x2="23"
+                y1="10"
+                y2="10"
+              />
+            </svg>
+            CATEGORY
+          </div>
+          <div
+            class="markdown-content"
+          />
+          <a
+            data-testid="item-link"
+            href="/one"
+            style="text-decoration: none;"
+          >
+            <div
+              class="sc-htoDjs cpAEXK"
+            >
+              <div>
+                <span
+                  class="sc-gZMcBi guRbgs"
+                  data-testid="item-heading"
+                >
+                  ONE ARTICLE
+                </span>
+                <p
+                  class="sc-gqjmRU cdjYHg"
+                  data-testid="item-description"
+                >
+                  ARTICLE
+                </p>
+                <p
+                  class="sc-VigVT dpTPfc"
+                  data-testid="item-info"
+                />
+              </div>
+            </div>
+          </a>
+          <a
+            data-testid="item-link"
+            href="/two"
+            style="text-decoration: none;"
+          >
+            <div
+              class="sc-htoDjs cpAEXK"
+            >
+              <div>
+                <span
+                  class="sc-gZMcBi guRbgs"
+                  data-testid="item-heading"
+                >
+                  TWO
+                </span>
+                <p
+                  class="sc-gqjmRU cdjYHg"
+                  data-testid="item-description"
+                >
+                  second article
+                </p>
+                <p
+                  class="sc-VigVT dpTPfc"
+                  data-testid="item-info"
+                />
+              </div>
+            </div>
+          </a>
+        </div>
+      </main>
+    </div>
+  </div>
+</div>
+`;
