@@ -52,8 +52,8 @@
     "serve": "gatsby serve",
     "test": "jest",
     "postinstall": "echo '\\033[0;36m'\"Thank you for using sprous\"'\\033[0m'",
-    "predeploy": "yarn build",
-    "deploy": "gh-pages -d build"
+    "predeploy": "gatsby build --prefix-paths",
+    "deploy": "gh-pages -d public"
   },
   "repository": {
     "type": "git",

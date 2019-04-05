@@ -64,7 +64,7 @@ You can try a demo of sprous at [https://vantezzen.github.io/sprous](https://van
     - Edit site metadata and settings inside `gatsby-config.js`
     - Change site favicon by replacing `src/images/icon.png`
     - [Customize site footer](#static-footer) inside `data/footer.md` or delete the file to remove the footer
-    - Add your custom domain to `package.json` > `homepage` to make Gatsby build files fully work
+    - Add your custom domain to `package.json` > `homepage` and `gatsby-config.js` > `pathPrefix` to make Gatsby build files fully work
     - Edit styles by modifying 
       - `src/components/layout.css`
       - any of the files inside `src/styles`
@@ -78,6 +78,7 @@ You can try a demo of sprous at [https://vantezzen.github.io/sprous](https://van
     ```bash
     yarn build
     ```
+    Please refer to [GatsbyJS' docs "Deploying and Hosting" section](https://www.gatsbyjs.org/docs/deploying-and-hosting/) if you run into any problems with GatsbyJS.
 7. **Upload build to your server**
     You can now upload sprous' static build files, located inside `public/`, to any hosting provider.
 

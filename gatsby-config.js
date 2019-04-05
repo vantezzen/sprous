@@ -17,6 +17,7 @@ module.exports = {
       BTSLinkHref: "https://github.com/vantezzen/sprous", // Link location of the "Back to service" (BTS) link
     },
   },
+  pathPrefix: `/sprous`,
   // STOP editing site settings unless you want to change gatsby configuration
 
   
