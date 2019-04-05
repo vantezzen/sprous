@@ -4,7 +4,7 @@
   </a>
 </p>
 <h1 align="center">
-  🌱 Sprous
+  🌱 sprous
 </h1>
 <h2 align="center" style="margin-bottom:2rem">
   customer self-support / support system / knowledge base / help desk
