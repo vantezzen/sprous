@@ -1,6 +1,7 @@
 ---
 type: "footer"
 ---
+
 <div 
   align="center" 
   style="display:flex; justify-content: center;align-items:center;flex-direction:column;margin-top:2.5rem;">

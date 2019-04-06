@@ -15,7 +15,13 @@ const Logo = ({ styles }) => (
         }
       }
     `}
-    render={data => <Img fluid={data.placeholderImage.childImageSharp.fluid} style={ styles } data-testid="logo-image" />}
+    render={data => (
+      <Img
+        fluid={data.placeholderImage.childImageSharp.fluid}
+        style={styles}
+        data-testid="logo-image"
+      />
+    )}
   />
 )
 export default Logo

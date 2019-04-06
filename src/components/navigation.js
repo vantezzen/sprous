@@ -1,7 +1,7 @@
 import React from "react"
 import { Link, StaticQuery, graphql } from "gatsby"
 
-import Logo from './logo'
+import Logo from "./logo"
 
 import {
   Nav,
@@ -11,8 +11,8 @@ import {
   LogoLink,
   LinksContainer,
   LinksSpacingLeft,
-  NavLink
-} from '../styles/navigation'
+  NavLink,
+} from "../styles/navigation"
 
 const Navigation = () => (
   <StaticQuery
@@ -28,46 +28,50 @@ const Navigation = () => (
               BTSLinkHref
             }
           }
-          
         }
       }
     `}
     render={data => {
-      const { site } = data;
+      const { site } = data
 
       // Get site metadata
       const title = site.siteMetadata.title
       const logoType = site.siteMetadata.logoType
-    
+
       // Get settings
-      const settings = site.siteMetadata.settings;
-    
+      const settings = site.siteMetadata.settings
+
       return (
         <Nav>
           {/* Logo */}
           <LogoContainer>
-            <Link to="/" style={ LogoLink }>
-              { (logoType === 'image' || logoType === 'combined') && <Logo styles={ ImageLogo } data-testid="navigation-image-logo" /> }
-              { (logoType === 'text' || logoType === 'combined') && <TextLogo data-testid="navigation-text-logo">{ title }</TextLogo> }
+            <Link to="/" style={LogoLink}>
+              {(logoType === "image" || logoType === "combined") && (
+                <Logo styles={ImageLogo} data-testid="navigation-image-logo" />
+              )}
+              {(logoType === "text" || logoType === "combined") && (
+                <TextLogo data-testid="navigation-text-logo">{title}</TextLogo>
+              )}
             </Link>
           </LogoContainer>
-    
+
           {/* <ToggleContainer>
             <ToggleButton>
                 <Menu />
             </ToggleButton>
           </ToggleContainer> */}
           {/* BTS Link */}
-          {
-            settings.showBTSLink && (
-              <LinksContainer>
-                <LinksSpacingLeft />
-                <NavLink href={ settings.BTSLinkHref } data-testid="navigation-bts-link">
-                    { settings.BTSLinkTitle }
-                </NavLink>
-              </LinksContainer>
-            )
-          }
+          {settings.showBTSLink && (
+            <LinksContainer>
+              <LinksSpacingLeft />
+              <NavLink
+                href={settings.BTSLinkHref}
+                data-testid="navigation-bts-link"
+              >
+                {settings.BTSLinkTitle}
+              </NavLink>
+            </LinksContainer>
+          )}
         </Nav>
       )
     }}

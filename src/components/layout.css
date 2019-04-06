@@ -1,6 +1,6 @@
 html {
-  font-family: 'Poppins', sans-serif;
-  background-color: #F6F7FB;
+  font-family: "Poppins", sans-serif;
+  background-color: #f6f7fb;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   min-height: 100vh;
@@ -22,7 +22,7 @@ body {
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 
- html {
+html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
 }
@@ -53,7 +53,7 @@ main {
 
 h1 {
   font-size: 2em;
-  margin: .67em 0;
+  margin: 0.67em 0;
 }
 
 /* Grouping content
@@ -100,7 +100,7 @@ abbr[title] {
   border-bottom: none; /* 1 */
   text-decoration: underline; /* 2 */
   -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted; /* 2 */
+  text-decoration: underline dotted; /* 2 */
 }
 
 /**
@@ -244,7 +244,7 @@ button:-moz-focusring,
  */
 
 fieldset {
-  padding: .35em .75em .625em;
+  padding: 0.35em 0.75em 0.625em;
 }
 
 /**
@@ -486,19 +486,19 @@ img {
 input:-ms-input-placeholder,
 textarea:-ms-input-placeholder {
   color: inherit;
-  opacity: .5;
+  opacity: 0.5;
 }
 
 input::-ms-input-placeholder,
 textarea::-ms-input-placeholder {
   color: inherit;
-  opacity: .5;
+  opacity: 0.5;
 }
 
 input::placeholder,
 textarea::placeholder {
   color: inherit;
-  opacity: .5;
+  opacity: 0.5;
 }
 
 button,
@@ -513,7 +513,7 @@ table {
 /* Custom style */
 
 /* Improve markdown content */
-.markdown-content a, 
+.markdown-content a,
 .markdown-content h1,
 .markdown-content h2,
 .markdown-content h3,

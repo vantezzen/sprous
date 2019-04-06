@@ -3,17 +3,17 @@
  */
 import React from "react"
 import { graphql } from "gatsby"
-import { HelpCircle } from 'react-feather'
+import { HelpCircle } from "react-feather"
 
-import Layout from '../components/layout'
-import SEO from '../components/seo'
+import Layout from "../components/layout"
+import SEO from "../components/seo"
 
-import { ItemNoFlex } from '../styles/item'
+import { ItemNoFlex } from "../styles/item"
 import {
   ArticleHeading,
   ArticleContent,
-  ArticleHelpCircle
-} from '../styles/article'
+  ArticleHelpCircle,
+} from "../styles/article"
 
 export default function Template({ data }) {
   const { article, footer } = data
@@ -23,12 +23,12 @@ export default function Template({ data }) {
 
   return (
     <Layout>
-      <SEO title={ frontmatter.title } />
+      <SEO title={frontmatter.title} />
 
-      <div style={{ marginTop: '2.5rem' }}>
+      <div style={{ marginTop: "2.5rem" }}>
         <ItemNoFlex>
           <ArticleHeading>
-            <HelpCircle style={ ArticleHelpCircle } width="100%" height="100%" />
+            <HelpCircle style={ArticleHelpCircle} width="100%" height="100%" />
             {frontmatter.title}
           </ArticleHeading>
           <ArticleContent
@@ -36,16 +36,13 @@ export default function Template({ data }) {
             className="markdown-content"
             data-testid="article-content"
           />
-          {
-            footer != null && (
-              <ArticleContent
-                dangerouslySetInnerHTML={{ __html: footer.html }}
-                className="markdown-content footer"
-                data-testid="article-footer"
-              />
-            )
-          }
-          
+          {footer != null && (
+            <ArticleContent
+              dangerouslySetInnerHTML={{ __html: footer.html }}
+              className="markdown-content footer"
+              data-testid="article-footer"
+            />
+          )}
         </ItemNoFlex>
       </div>
     </Layout>
@@ -53,17 +50,17 @@ export default function Template({ data }) {
 }
 
 export const pageQuery = graphql`
-query($article: String!) {
-  article: markdownRemark(frontmatter: { path: { eq: $article } }) {
-    html
-    frontmatter {
-      path
-      title
+  query($article: String!) {
+    article: markdownRemark(frontmatter: { path: { eq: $article } }) {
+      html
+      frontmatter {
+        path
+        title
+      }
+    }
+
+    footer: markdownRemark(frontmatter: { type: { eq: "footer" } }) {
+      html
     }
   }
-
-  footer: markdownRemark(frontmatter: { type: { eq: "footer" } }) {
-    html
-  }
-}
 `
