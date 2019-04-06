@@ -1,17 +1,17 @@
 module.exports = {
   // START editing site settings
   siteMetadata: {
-    title: `sprous`,  // Title of the support website
+    title: `sprous`, // Title of the support website
     logoType: `combined`, // Logo shown in navigation bar, `text`, `image` or `combined`(i.e. show both)
     description: `Add a simple self-support system/knowledge base to your website using sprous.`,
     author: `@vantezzen`,
-    
+
     settings: {
       showCategoriesInSearch: true,
 
       showPoweredBySprousAsFooter: true, // Show "Powered by sprous" link as footer to support the project
-                                         // Feel free to disable if you do not want the footer
-      
+      // Feel free to disable if you do not want the footer
+
       showBTSLink: true, // Show "Back to service" (BTS) link in navigation bar
       BTSLinkTitle: "Back to GitHub", // Text shown inside the "Back to service" (BTS) link
       BTSLinkHref: "https://github.com/vantezzen/sprous", // Link location of the "Back to service" (BTS) link
@@ -20,7 +20,6 @@ module.exports = {
   pathPrefix: `/sprous`,
   // STOP editing site settings unless you want to change gatsby configuration
 
-  
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-sharp`,

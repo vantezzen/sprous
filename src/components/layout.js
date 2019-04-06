@@ -4,62 +4,70 @@ import { StaticQuery, graphql } from "gatsby"
 
 import Navigation from "./navigation"
 import "./layout.css"
-import Search from './search'
-import Footer from './footer'
+import Search from "./search"
+import Footer from "./footer"
 
 import {
   ContentOuterContainer,
   ContentInnerContainer,
-  SearchField
-} from '../styles/layout'
+  SearchField,
+} from "../styles/layout"
 
 class Layout extends Component {
   state = {
     searchActive: false,
-    searchQuery: ''
+    searchQuery: "",
   }
 
   constructor(props) {
-    super(props);
+    super(props)
 
-    this.handleSearchUpdate = this.handleSearchUpdate.bind(this);
+    this.handleSearchUpdate = this.handleSearchUpdate.bind(this)
   }
 
   handleSearchUpdate(e) {
-    let searchActive = e.target.value !== '';
+    let searchActive = e.target.value !== ""
 
-    this.setState({ 
+    this.setState({
       searchActive,
-      searchQuery: e.target.value
+      searchQuery: e.target.value,
     })
   }
 
   render() {
-    const { children, data } = this.props;
-    const showFooter = data.site.siteMetadata.settings.showPoweredBySprousAsFooter;
+    const { children, data } = this.props
+    const showFooter =
+      data.site.siteMetadata.settings.showPoweredBySprousAsFooter
 
     return (
       <>
         <Navigation data-testid="layout-navigation" />
         <ContentOuterContainer data-testid="layout-content-outer-container">
           <ContentInnerContainer data-testid="layout-content-inner-container">
-
-            <SearchField 
-              type="text" 
-              placeholder="What can I help you with?" 
-              autoFocus 
-              onChange={ this.handleSearchUpdate } 
-              value={ this.state.searchQuery } 
-              data-testid="layout-search-field" />
+            <SearchField
+              type="text"
+              placeholder="What can I help you with?"
+              autoFocus
+              onChange={this.handleSearchUpdate}
+              value={this.state.searchQuery}
+              data-testid="layout-search-field"
+            />
 
             <main>
-              { this.state.searchActive ? <Search query={ this.state.searchQuery } data-testid="layout-search-results" /> : children }
+              {this.state.searchActive ? (
+                <Search
+                  query={this.state.searchQuery}
+                  data-testid="layout-search-results"
+                />
+              ) : (
+                children
+              )}
             </main>
           </ContentInnerContainer>
         </ContentOuterContainer>
-        { showFooter && <Footer /> }
+        {showFooter && <Footer />}
       </>
-    );
+    )
   }
 }
 
@@ -70,17 +78,16 @@ Layout.propTypes = {
 export default props => (
   <StaticQuery
     query={graphql`
-    query {
-      site {
-        siteMetadata {
-          settings {
-            showPoweredBySprousAsFooter
+      query {
+        site {
+          siteMetadata {
+            settings {
+              showPoweredBySprousAsFooter
+            }
           }
         }
       }
-    } 
     `}
-    render={(data) => <Layout data={ data } {...props} />}
+    render={data => <Layout data={data} {...props} />}
   />
-);
-
+)
